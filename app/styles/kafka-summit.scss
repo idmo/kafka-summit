@@ -1,0 +1,276 @@
+// colors
+
+$white: 		rgba(255, 255, 255, 1.0);
+$black:			rgba(0, 0, 0, 1.0);
+
+$primary:		rgba(255, 0, 255, 1.0);
+$light: 		rgba(255, 255, 255, 1.0);
+$dark:			rgba(0, 0, 0, 1.0);
+$gray:			rgba(183, 183, 183, 1.0);
+$darkOpaque:	opacify($dark, 0.8);
+
+// sizes and heights
+$slideHeight: 	400px;
+$verticalPad:	50px;
+
+body {
+	background: url('../images/background-kafka-summit.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: 'PT Sans';
+}
+body.cfp {
+	background: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto';
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h3 {
+	margin: 0 0 0 0;
+	a {
+		color: $primary;
+	}
+}
+
+.btn-primary, .hs-button.primary.large {
+	background-color: $primary;
+	border-color: $primary;
+	border-radius: 4px;
+	font-size: 17px;
+	padding: 10px;
+	color: $white;
+}
+
+.navbar {
+	a {
+		text-transform: uppercase;
+		color: #555;
+	}
+}
+
+.slide {
+	padding-top: $verticalPad;
+	h3 {
+		color: $primary;
+		text-transform: uppercase;
+		line-height: 1.1;
+		font-weight: bold;
+		font-size: 38px;
+		margin: 0 0 0 0;
+	}
+	p {
+		line-height: 1.7;
+	}	
+	// min-height: $slideHeight;
+}
+
+
+.masthead {
+	padding-top: 12%;
+	img {
+		text-align: center;
+	}
+}
+
+#sponsors, #papers {
+	
+	p {
+		color: $dark;
+	}
+}
+
+#save-the-date, #get-updates {
+	// background-color: #000;
+	box-shadow: inset 0 0 0 1000px transparentize($dark, 0.15);
+}
+
+#save-the-date {
+	h3 {
+		color: $white;
+		margin: 0 0 0 0;
+		&.primary {
+			color: $primary;
+		}
+		&.thin {
+			font-weight: 100;
+			text-transform: none;
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+}
+
+#call-for-proposals {
+	color: $primary;
+	text-transform: uppercase;
+	h3 {
+		color: $primary;
+	}
+	a {
+		color: $primary;
+	}
+	div {
+		color: $primary;
+	}
+	padding-bottom: $verticalPad;
+}
+
+#get-updates {
+	h3 {
+		color: $white;
+		text-align: right;
+	}
+	p {
+		color: $primary;
+		text-align: right;
+		font-size: 18px;
+	}
+	padding-bottom: $verticalPad;
+}
+
+
+.footer {
+	margin-top: 25px;
+	a {
+		color: #999999;
+	}
+	p {
+		color: #999999;
+		&.copyright {
+			color: #666666;
+		}
+	}
+	padding-bottom: 40px;
+	h3 {
+		color: $gray;
+		margin-bottom: 0;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: $gray;
+		weight: 100;
+		a {
+			color: $gray;
+		}
+	}
+	.social {
+		margin: 100px 0 20px 0; 
+	}
+	i {
+		color: $primary;
+		margin-right: 30px;
+	}
+	.disclaimer {
+		font-weight: bold;
+		font-size: 110%;
+		margin-bottom: 12px;
+		ul li a {
+			color: $gray;
+			margin-right: 6px;
+		}
+	}
+}
+
+
+// helpers
+.thin {
+	font-weight: 100;
+}
+
+.hbspt-form {
+	label {
+		display: none;
+	}
+	ul {
+		padding: 0;
+	}
+}
+label span {
+	padding-left: 6px;
+}
+.inputs-list.multi-container {
+	list-style: none;
+	margin: 0;
+	li {
+		margin: 0;
+		padding: 0;
+	}
+	label {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.hs-richtext {
+	color: #fff;
+}
+
+label span {
+	color: #cccccc;
+	size: 17px;
+}
+
+div.input input {
+	padding: 8px;
+	background-color: #45474d;
+	color: #808080;
+	margin-bottom: 22px;
+	border: 1px solid #45474d;
+}
+
+// hubspot form stuff
+body.hubspot {
+	div.input input {
+	padding: 8px;
+	background-color: #fff;
+	color: #808080;
+	margin-bottom: 22px;
+}
+}
+
+.submitted-message {
+	color: #fff;
+	font-size: 18px;
+}
+
+div.input input {
+	margin-bottom: 10px;
+	color: #fff;
+	font-weight: normal;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	color: #ff00ff;
+	font-weight: 700;	
+	background: transparent;
+}
+
+
+.actions input {
+	margin-top: 10px;
+}
+
+.hs-richtext {
+	margin-bottom: 5px;
+}
+
+// Google Form stuff
+iframe {
+	min-height: 2300px;
+	width: 100%;
+	.ss-form-container {
+	box-shadow: none;
+}
+}
