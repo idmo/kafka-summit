@@ -452,8 +452,7 @@ module.exports = function (grunt) {
     'modernizr',
     'rev',
     'usemin',
-    'htmlmin',
-    'scp'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
